@@ -40,6 +40,13 @@ public class HDMIActivity extends Activity {
 		}
 		super.onDestroy();
 	}
+	
+	@Override
+	protected void onPause() {
+		// TODO Auto-generated method stub
+		super.onPause();
+		mRealtekeHdmi.stopDisPlay();
+	}
 
 	@Override
 	protected void onResume() {
